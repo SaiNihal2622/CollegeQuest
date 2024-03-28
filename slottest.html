@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic Calendar JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="./slot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./slot.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="./samplelogin.html">Home</a>
+      <a href="./mentortest.html">Mentor</a>
+      <a href="#practice">About Us</a>
+      <a href="#competitions">Contact Us</a>
+    </div>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+    <form action="/slot" method="post">
+    <div id="time-slots">
+          <h2>Morning:</h2>
+          <div id="morning" name="morning">
+                <button id="slot" name="slot">
+                  9:00 -9:30
+                </button>
+                <button id="slot" name="slot">
+                  9:30 -10:00
+                </button>
+                <button  id="slot" name="slot">
+                  10:00 -10:30
+                </button>
+                <button  id="slot" name="slot">
+                  10:30 -11:00
+                </button>
+          </div>
+          <h2>Afternoon:</h2>
+          <div id="morning" name="morning">
+            <button id="slot" name="slot">
+              12:30 -01:00
+            </button>
+            <button  id="slot" name="slot">
+              01:00 -01:30
+            </button>
+            <button  id="slot" name="slot">
+              01:30 -02:00
+            </button>
+            <button  id="slot" name="slot">
+              02:00 -02:30
+            </button>
+      </div>
+      <h2>Evening:</h2>
+      <div id="morning" name="morning">
+        <button  id="slot" name="slot">
+          07:00-07:30
+        </button >
+        <button  id="slot" name="slot">
+          07:30 -08:00
+        </button>
+        <button  id="slot" name="slot">
+          08:00 -08:30
+        </button>
+        <button  id="slot" name="slot">
+          08:30 -09:00
+        </button  id="slot" name="slot">
+      </div>
+      <br><br>
+      <div >
+        <button class="button" >Submit</button>
+      </div>
+    </div>
+</form>
+    </body>
+  </body>
+</html>

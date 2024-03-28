@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page - HackerRank Style</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.png');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .navbar {
+            padding: 10px;
+  overflow: hidden;
+  background-color: #34495e; /* Navy blue background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add drop shadow */
+  position: fixed; /* Fix the navbar at the top of the screen */
+  width: 100%; /* Make the navbar fill the entire width */
+  top: 0; /* Position it at the top of the screen */
+  left: 0; /* Position it at the left of the screen */
+  z-index: 1000;/* Set a high z-index to ensure it appears above other elements */
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff; /* White font color */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 25px; /* Add smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: #2c3e50;
+  border-radius: 25px; /* Slightly darker blue on hover */
+}
+
+.navbar a.active {
+  background-color: #e74c3c; 
+  border-radius:25px ;/* Red for active link */
+}
+
+
+
+        .overlay {
+            background-color: #ddd; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            width: 400px;
+            margin-top: 140px; 
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0; 
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0; 
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1fb8a8;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #6c757d;
+        }
+
+        .footer a {
+            color: #2ec4b6;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-logos img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a class="active" href="./samplelogin.html">Home</a>
+    <a href="./mentortest.html">Mentor</a>
+    <a href="#practice">About Us</a>
+    <a href="#competitions">Contact Us</a>
+</div>
+
+<div class="overlay">
+    <h2>Create Your Account</h2>
+    <form action="/create" method="post">
+        <input type="text" id="Username" name="Username" placeholder="Full Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <div class="footer">
+        <p>Already have an account? <a href="./samplelogin.html" style="color: #2ec4b6; text-decoration: none;">Login</a></p>
+        <p>or</p>
+    </div>
+    
+    <div class="social-logos">
+        <img src="google.jpeg" alt="Google Logo">
+        <img src="facebook.png" alt="Facebook Logo">
+        <img src="git.png"  alt="LinkedIn Logo"> 
+        <img src="linkedin1.png" alt="LinkedIn">
+    </div>
+</div>
+</body>
+</html>

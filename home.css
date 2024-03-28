@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content:center;
+    min-height: 100vh;
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #34495e; /* Navy blue background */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add drop shadow */
+    position: fixed; /* Fix the navbar at the top of the screen */
+    width: 100%; /* Make the navbar fill the entire width */
+    top: 0; /* Position it at the top of the screen */
+    left: 0; /* Position it at the left of the screen */
+    z-index: 1000;/* Set a high z-index to ensure it appears above other elements */
+    padding: 10px;
+  
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #ffffff; /* White font color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 25px; /* Add smooth transition for hover effect */
+  }
+  
+  .navbar a:hover {
+    background-color: #2c3e50;
+    border-radius: 25px; /* Slightly darker blue on hover */
+  }
+  
+  .navbar a.active {
+    background-color: #e74c3c; 
+    border-radius:25px ;/* Red for active link */
+  }
+  .btn{
+    float: right;
+    cursor: pointer;
+  }
+  .navbar .btn a:hover{
+    background-color: #e74c3c;
+  }
+  .card-container {
+    display: flex;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    background-color: #fff;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out 0.1s;
+  }
+  .card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  #heading{
+    text-align: center;
+    color:beige;
+  }
+  img{
+    height: 60px;
+    width: 60px;
+  }
+  #eam{
+    height: 60px;
+    width: 100px;
+  }
+  #container{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  #main-heading{
+    margin-top: 15%;
+    text-align: center;
+  }
+  #main-heading{
+    font-size: 45px;
+    font-weight:bold;
+    color:#fff;
+  }
+  #anim{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    position: relative;
+    color: transparent;
+    background-image: linear-gradient(#fff,#fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 2s linear infinite alternate;
+  }
+  @keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+  }
+  main {
+    flex: 1;
+  }
+
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-upper{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-middle {
+    flex-grow: 1;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+
+  .feedback-input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  .send-button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .footer-lower{
+    color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    .footer-left, .footer-middle, .feedback-input {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links a {
+      margin: 5px 0;
+    }
+  }

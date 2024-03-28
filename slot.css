@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content:center;
+  min-height: 100vh;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  padding: 60px 60px;
+  width: 462px;
+  background-color: #fff;
+  
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+  text-align: center;
+
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.navbar {
+padding: 10px;
+  overflow: hidden;
+  background-color: #34495e; /* Navy blue background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add drop shadow */
+  position: fixed; /* Fix the navbar at the top of the screen */
+  width: 100%; /* Make the navbar fill the entire width */
+  top: 0; /* Position it at the top of the screen */
+  left: 0; /* Position it at the left of the screen */
+  z-index: 1000;/* Set a high z-index to ensure it appears above other elements */
+
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff; /* White font color */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 25px; /* Add smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  background-color: #2c3e50;
+  border-radius: 25px; /* Slightly darker blue on hover */
+}
+
+.navbar a.active {
+  background-color: #e74c3c; 
+  border-radius:25px ;/* Red for active link */
+}
+
